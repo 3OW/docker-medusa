@@ -25,7 +25,7 @@ RUN \
  tar xf /tmp/medusa.tar.gz -C \
 	/app/medusa --strip-components=1
 
-# copy local files
+# copy local files 
 COPY root/ /
 
 # ports and volumes
