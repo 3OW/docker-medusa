@@ -17,15 +17,12 @@ RUN \
 	python3 \
 	unrar && \
  echo "**** install app ****" && \
- if [ -z ${MEDUSA_RELEASE+x} ]; then \
-	MEDUSA_RELEASE=$(curl -sX GET "https://api.github.com/repos/pymedusa/Medusa/releases/latest" \
-	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
  mkdir -p \
 	/app/medusa && \
  curl -o \
 	/tmp/medusa.tar.gz -L \
-	"https://github.com/pymedusa/Medusa/archive/${MEDUSA_RELEASE}.tar.gz" && \
+	"https://github.com/3OW/Medusa/archive/feature/indexer-glotz.zip" && \
  tar xf /tmp/medusa.tar.gz -C \
 	/app/medusa --strip-components=1
 
