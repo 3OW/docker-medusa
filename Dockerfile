@@ -17,7 +17,6 @@ RUN \
 	python3 \
 	unrar && \
  echo "**** install app ****" && \
- fi && \
  mkdir -p \
 	/app/medusa && \
  curl -o \
