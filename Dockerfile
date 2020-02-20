@@ -21,7 +21,7 @@ RUN \
 	/app/medusa && \
  curl -o \
 	/tmp/medusa.tar.gz -L \
-	"https://api.github.com/repos/3OW/Medusa/tarball/master" && \
+	"https://api.github.com/repos/3OW/Medusa/tarball/feature/indexer-glotz" && \
  tar xf /tmp/medusa.tar.gz -C \
 	/app/medusa --strip-components=1
 
