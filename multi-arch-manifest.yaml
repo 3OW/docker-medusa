@@ -1,6 +1,6 @@
 image: 3oww/multitest:latest
 manifests:
-  - image: 3oww/multitest:lamd64-latest
+  - image: 3oww/multitest:amd64-latest
     platform:
       architecture: amd64
       os: linux
