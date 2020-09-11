@@ -1,15 +1,15 @@
-image: 3oww/multitest:latest
+image: 3oww/medusa:latest
 manifests:
-  - image: 3oww/multitest:amd64-latest
+  - image: 3oww/medusa:amd64-latest
     platform:
       architecture: amd64
       os: linux
-  - image: 3oww/multitest:arm64v8-latest
+  - image: 3oww/medusa:arm64v8-latest
     platform:
       architecture: arm64
       os: linux
       variant: v8
-  - image: 3oww/multitest:arm32v7-latest
+  - image: 3oww/medusa:arm32v7-latest
     platform:
       architecture: arm
       os: linux
